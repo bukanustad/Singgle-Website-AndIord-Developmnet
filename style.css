@@ -1,0 +1,220 @@
+/* ===== PENGATURAN DASAR ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: #f8f8f6;
+  color: #3d4f63;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+}
+
+.logo {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: block;
+  width: 92%;
+  max-width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ===== ISI ARTIKEL ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+.info {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7a8a;
+}
+
+.kategori {
+  color: #e0674f;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.pembuka {
+  max-width: 600px;
+  margin: 30px auto;
+  font-size: 14px;
+}
+
+/* ===== 2 KOLOM (gambar + teks) ===== */
+.dua-kolom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.dua-kolom img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.dua-kolom .teks {
+  width: 50%;
+  font-size: 14px;
+}
+
+.dua-kolom .teks p {
+  margin-bottom: 15px;
+}
+
+/* gambar pindah ke kanan */
+.dua-kolom.terbalik {
+  flex-direction: row-reverse;
+}
+
+/* ===== MORE FROM THE CATEGORY ===== */
+h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 70px;
+}
+
+.kartu-wrap {
+  display: flex;
+  gap: 25px;
+  margin: 25px 0 60px;
+}
+
+.kartu {
+  width: 33.33%;
+  font-size: 13px;
+}
+
+.kartu h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.kartu .info {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.kartu a {
+  display: inline-block;
+  margin-top: 15px;
+  border-bottom: 1px solid #3d4f63;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #4e8b8b;
+  color: white;
+  padding: 60px 20px;
+}
+
+.footer-isi {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo.putih {
+  color: white;
+}
+
+.kecil {
+  font-size: 11px;
+}
+
+.newsletter {
+  background-color: white;
+  color: #3d4f63;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.newsletter h4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.newsletter input,
+.newsletter button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #3d4f63;
+  border-radius: 4px;
+  background: white;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.newsletter button {
+  cursor: pointer;
+}
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 700px) {
+  .dua-kolom,
+  .dua-kolom.terbalik,
+  .kartu-wrap,
+  .footer-isi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dua-kolom img,
+  .dua-kolom .teks,
+  .kartu,
+  .newsletter {
+    width: 100%;
+  }
+
+  .navbar {
+    font-size: 12px;
+  }
+}
